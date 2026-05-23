@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 100%;
+}
+
+main section{
+    width: 100%;
+    padding: var(--padding-xxlarge);
+    display: flex;
+    gap: var(--gutter-large);
+}
+
+.btn{
+    padding: var(--padding-small) var(--padding-medium);
+    background-color: var(--bg-active-color);
+    color: var(--text-active-color);
+    border: none;
+    border-radius: var(--border-radius-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#reset-btn{
+    background-color: var(--bg-danger-color);
+    color: var(--text-primary-color);
+}
+
+#download-btn{
+    background-color: var(--bg-success-color);
+    color: var(--text-primary-color);
+}
+
+main section .left{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-large);
+    width: 70%;
+    align-items: center;
+}
+
+main section .top{
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-medium);
+}
+
+main section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gutter-medium);
+    background-color: var(--bg-secondary-color);
+    width: 100%;
+    padding: var(--padding-medium);
+    aspect-ratio: 5/3;
+    border-radius: var(--border-radius-medium);
+}
+
+main section .bottom .placeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    gap: var(--gutter-medium);
+}
+
+main section .bottom .placeholder i{
+    font-size: 10rem;
+}
+
+main section .bottom .placeholder p{
+    font-size: var(--font-size-xlarge);
+}
+
+main section .right{
+    width: 30%;
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-large);
+    border-radius: var(--border-radius-large);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-medium);
+}
+
+main section .right .filters{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-medium);
+}
+
+main section .right .filter{
+    width: 100%;
+}
+
+main section .right .filter input{
+    width: 100%;
+    margin-bottom: var(--margin-medium);
+    outline: none;
+    appearance: none;
+}
+
+main section .right .filter input::-webkit-slider-runnable-track{
+    background-color: var(--bg-active-color);
+    height: 0.3rem;
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+}
+
+main section .right .filter input::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none; /* Good practice for webkit engines */
+    background-color: var(--bg-active-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.6rem; /* Adjusted alignment math */
+}
+
+canvas{
+    max-width: 90%;
+    max-height: 80vh;
+    display: none;
+}

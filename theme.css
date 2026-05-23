@@ -1,0 +1,49 @@
+:root{
+    /* bg colors */
+    --bg-primary-color: rgb(17,17,17);
+    --bg-secondary-color: rgb(34,34,34);
+    --bg-active-color: rgb(230, 230, 230);
+    --bg-danger-color: rgb(159, 12, 12);
+    --bg-success-color: rgb(12, 179, 12);
+
+    /* text colors */
+    --text-primary-color: rgb(255, 255, 255);
+    --text-secondary-color: rgb(200, 200, 200);
+    --text-tertiary-color: rgb(150, 150, 150);
+    --text-active-color: rgb(24, 24, 24);
+
+    /* padding variables */
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem;
+    --padding-large: 1.5rem;
+    --padding-xlarge: 2rem;
+    --padding-xxlarge: 3rem;
+
+    /* margin variables */
+    --margin-small: 0.5rem;
+    --margin-medium: 1rem;
+    --margin-large: 1.5rem;
+    --margin-xlarge: 2rem;
+    --margin-xxlarge: 3rem;
+
+    /* gutter */
+    --gutter-small: 0.5rem;
+    --gutter-medium: 1rem;
+    --gutter-large: 1.5rem;
+    --gutter-xlarge: 2rem;
+    --gutter-xxlarge: 3rem;
+
+    /* font sizes */
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.25rem;
+    --font-size-xlarge: 1.5rem;
+    --font-size-xxlarge: 2rem;
+
+    /* border radius */
+    --border-radius-small: 0.25rem;
+    --border-radius-medium: 0.5rem;
+    --border-radius-large: 0.75rem;
+    --border-radius-xlarge: 1rem;
+    --border-radius-xxlarge: 1.25rem;
+}
